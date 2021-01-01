@@ -1,125 +1,107 @@
 body {
-    max-width: 100%;
-    font-family: "DM Sans", sans-serif;
-  }
-    
-  strong {
-    font-weight: bold;
-  }
-  
+  max-width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+strong {
+  font-weight: bold;
+}
+.city {
+  text-align: center;
+  color: #016ec6;
+  font-size: 4em;
+}
+form {
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+}
+.container {
+  max-width: 100%;
+}
+.search-bar {
+  padding: 8px 30px;
+  border: none;
+  background-color: #f1f9ff;
+  border-radius: 10px;
+}
+button {
+  border: none;
+  margin-left: 10px;
+  background: none;
+  outline: 0 !important;
+}
+.fa-check-circle {
+  text-align: center;
+  font-size: 25px;
+  color: yellowgreen;
+  border: none;
+}
+.fa-check-circle:hover {
+  color: rgb(18, 138, 7);
+}
+.fa-map-pin {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(226, 37, 37);
+  border: none;
+}
+.fa-map-pin:hover {
+  color: rgb(104, 7, 7);
+}
+.weather-today {
+  display: block;
+  margin: 30px;
+}
+h1,
+h2,
+h4,
+h5,
+p {
+  color: #016ec6;
+}
+h5 {
+  font-weight: 100;
+}
+.degrees {
+  color: #016ec6;
+  text-align: center;
+}
+.weather-today h1 {
+  font-size: 58px;
+}
+h4 {
+  font-weight: 150;
+}
+h2 {
+  font-size: 24px;
+}
+.card {
+  background-color: #f1f9ff;
+  border: 3px solid #016ec6;
+  border-radius: 20px;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+.week-weather .card {
+  background-color: #f1f9ff;
+  border: 2px solid #016ec6;
+  border-radius: 30px;
+}
+.week-weather .card-body {
+  padding: 30px;
+}
+.week-weather .card-text h4 {
+  font-size: 10px;
+}
+li {
+  list-style: none;
+}
+@media (min-width: 768px) {
   .city {
-    text-align: center;
-    color: #016ec6;
     font-size: 80px;
   }
-  
-  form {
-    text-align: center;
-    padding: 25px;
-    border-radius: 10px;
-  }
-  
-  .container {
-    max-width: 100%;
-  }
-  
-  .search-bar {
-    padding: 8px 30px;
-    border: none;
-    background-color: #f1f9ff;
-    border-radius: 10px;
-  }
-  
-  button {
-    border: none;
-    margin-left: 10px;
-    background: none;
-    outline: 0 !important;
-  }
-  
-  .fa-check-circle {
-    text-align: center;
-    font-size: 25px;
-    color: yellowgreen;
-    border: none;
-  }
-  
-  .fa-check-circle:hover {
-    color: rgb(18, 138, 7);
-  }
-  
-  .fa-map-pin {
-    text-align: center;
-    font-size: 25px;
-    color: rgb(226, 37, 37);
-    border: none;
-  }
-  
-  .fa-map-pin:hover {
-    color: rgb(104, 7, 7);
-  }
-  
-  .weather-today {
-    display: block;
-    margin: 30px;
-  }
-  
-  h1,
-  h2,
-  h4,
-  h5,
-  p {
-    color: #016ec6;
-  }
-  
-  h5 {
-    font-weight: 100;
-  }
-  
-  .degrees {
-    color: #016ec6;
-    text-align: center;
-  }
-  
-  .weather-today h1 {
-    font-size: 58px;
-  }
-  h4 {
-    font-weight: 150;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  .card {
-    background-color: #f1f9ff;
-    border: 3px solid #016ec6;
-    border-radius: 20px;
-  }
-  .card-title {
-    text-align: center;
-  }
-  
-  .card-text {
-    text-align: center;
-  }
-  
-  .week-weather .card {
-    background-color: #f1f9ff;
-    border: 2px solid #016ec6;
-    border-radius: 30px;
-  }
-  
-  .week-weather .card-body {
-    padding: 30px;
-  }
-  
-  .week-weather .card-text h4 {
-    font-size: 10px;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
+}
