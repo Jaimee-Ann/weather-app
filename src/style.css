@@ -16,7 +16,7 @@ form {
   border-radius: 10px;
 }
 .container {
-  max-width: 100%;
+  max-width: 50%;
 }
 .search-bar {
   padding: 8px 30px;
@@ -48,6 +48,10 @@ button {
 .fa-map-pin:hover {
   color: rgb(104, 7, 7);
 }
+
+.fa-rainbow{
+  color: #EC6E4C;
+}
 .weather-today {
   display: block;
   margin: 30px;
@@ -55,12 +59,12 @@ button {
 h1,
 h2,
 h4,
-h5,
 p {
   color: #016ec6;
 }
 h5 {
   font-weight: 100;
+  color: #272727;
 }
 .degrees {
   color: #016ec6;
@@ -70,20 +74,21 @@ h5 {
   font-size: 58px;
 }
 h4 {
-  font-weight: 150;
+  font-size: 16px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 28px; 
+  font-weight: 250;
 }
 h3 {
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   color: #016ec6;
 }
 .card {
   background-color: #f1f9ff;
   border: 3px solid #016ec6;
-  border-radius: 20px;
+  border-radius: 70px;
 }
 .card-title {
   text-align: center;
@@ -91,6 +96,7 @@ h3 {
 .card-text {
   text-align: center;
 }
+
 .week-weather .card {
   background-color: #f1f9ff;
   border: 2px solid #016ec6;
@@ -112,7 +118,7 @@ li {
 }
 
 .degree-mode .active{
-  color: black;
+  color: #272727;
   cursor: default;
 
 }

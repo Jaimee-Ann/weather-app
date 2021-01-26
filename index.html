@@ -35,105 +35,35 @@
       </button>
     </form>
     <div><h1 class="city" id="cityHeader">Melbourne</h1></div>
+
+
+
     <div class="container">
+      <div class="card">
+        <div class="card-body">
       <div class="weather-today">
-        <div class="row">
-          <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
-            <h1>Today</h1>
-            <li id="todayDate"></li>
-            <br />
-            <h5>
-              <li>Humidity: <span id="humidity"> </span>%</li>
-              <li>Wind Speed: <span id="wind"> </span> km/h</li>
-            </h5>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Current temperature:</h4>
-                <h1 class="card-text">
-                  <span class="temperature" id="temperature">19</span
-                  ><span>°
+        <h2 class="card-title"><i class="fas fa-rainbow"></i> <span id="todayDate">  </span> <i class="fas fa-rainbow"></i></h2></br>
+        <span class="card-text">
+      </h1><span class="degree-mode"></span>
+      <h4>
+        <span><a href="#" id="celsius-link" class="active">°C</a> |</span>
+        <span><a href="#" id="fahrenheit-link">°F</a></span>
+      </h4>
+                
+                  <h1><span class="temperature" id="temperature">19</span>
+                  °
                     <img src="http://openweathermap.org/img/wn/10d@2x.png"
                   alt="clear"
                   id="icon"
                   />
-                  </span><br />
+                
                   <h3><span id="description">Sunny</span></h3>
-            </h1>
-            
-                <br />
-                <div class="degree-mode">
-                  <h4>
-                    <span><a href="#" id="celsius-link" class="active">°C</a> |</span>
-                    <span><a href="#" id="fahrenheit-link">°F</a></span>
-                  </h4>
-                </div>
-              </div>
-            </div>
+            <br />
+            <h5>
+              <li>Humidity: <span id="humidity"> </span>%</li>
+              <li>Wind Speed: <span id="wind"> </span> km/h</li>
+            </h5></br>
           </div>
-        </div>
-        <br /><br /><br />
-        <div class="week-weather">
-          <div class="row">
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Tomorrow</p>
-                  <h1 class="card-title">🌤</h1>
-                  <h2 class="card-text">22°c</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Monday</p>
-                  <h1 class="card-title">☀️</h1>
-                  <h2 class="card-text">24°c</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Tuesday</p>
-                  <h1 class="card-title">⛅️</h1>
-                  <h2 class="card-text">18°c</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Wednesday</p>
-                  <h1 class="card-title">⛈</h1>
-                  <h2 class="card-text">16°c</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Thursday</p>
-                  <h1 class="card-title">🌧</h1>
-                  <h2 class="card-text">12°c</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-2 mb-3">
-              <div class="card">
-                <div class="card-body">
-                  <p class="card-text">Friday</p>
-                  <h1 class="card-title">☀️</h1>
-                  <h2 class="card-text">31°c</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
