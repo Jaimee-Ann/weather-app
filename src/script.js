@@ -1,7 +1,7 @@
 function showWeatherCondition(response) {
     document.querySelector("#cityHeader").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(
-      response.data.main.temp
+      celsiusTemp
     );
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
@@ -11,6 +11,8 @@ function showWeatherCondition(response) {
     );
    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
    iconElement.setAttribute("alt", response.data.weather[0].icon);
+
+   celsiusTemp = response.data.main.temp;
 
   }
   
@@ -36,21 +38,29 @@ function showWeatherCondition(response) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(searchCurrentLocation);
   }
+  let celsiusTemp = null;
   
   function convertToFahrenheit(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    let temperature = temperatureElement.innerHTML;
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fTemp = Math.round((celsiusTemp * 9) / 5 + 32);
     temperature = Number(temperature);
-    temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+    temperatureElement.innerHTML = fTemp;
+
   }
   
-  function convertTocelsius(event) {
+  function convertToCelsius(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = 19;
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    temperatureElement.innerHTML = Math.round(celsiusTemp);
   }
   
+  
+
   // Date & Time
   let dateElement = document.querySelector("#todayDate");
   let currentTime = new Date();
@@ -86,9 +96,10 @@ function showWeatherCondition(response) {
   fahrenheitLink.addEventListener("click", convertToFahrenheit);
   
   let celsiusLink = document.querySelector("#celsius-link");
-  celsiusLink.addEventListener("click", convertTocelsius);
+  celsiusLink.addEventListener("click", convertToCelsius);
   
   let iconElement = document.querySelector("#icon");
+  
 
   search("Melbourne");
   

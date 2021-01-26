@@ -110,3 +110,12 @@ li {
     font-size: 80px;
   }
 }
+
+.degree-mode .active{
+  color: black;
+  cursor: default;
+
+}
+.degree-mode .active:hover{
+ text-decoration: none;
+}
