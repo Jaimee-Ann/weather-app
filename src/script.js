@@ -6,10 +6,11 @@ function showWeatherCondition(response) {
     document.querySelector("#description").innerHTML =
       response.data.weather[0].main;
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-    document.querySelector("#precipitation").innerHTML = response.data.main.precipitation.value;
     document.querySelector("#wind").innerHTML = Math.round(
       response.data.wind.speed * 3.6
     );
+   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
+
   }
   
   function search(city) {
@@ -86,5 +87,7 @@ function showWeatherCondition(response) {
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", convertTocelsius);
   
+  let iconElement = document.querySelector("#icon");
+
   search("Melbourne");
   
