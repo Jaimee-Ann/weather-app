@@ -1,4 +1,5 @@
 function showWeatherCondition(response) {
+  celsiusTemp = response.data.main.temp;
     document.querySelector("#cityHeader").innerHTML = response.data.name;
     document.querySelector("#temperature").innerHTML = Math.round(
       celsiusTemp
@@ -11,10 +12,7 @@ function showWeatherCondition(response) {
     );
    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
    iconElement.setAttribute("alt", response.data.weather[0].icon);
-
-   celsiusTemp = response.data.main.temp;
-
-  }
+}
   
   function search(city) {
     let apiKey = "8aed1bf91e607b096a113c2dd8fde03b";
