@@ -57,7 +57,6 @@ function showWeatherCondition(response) {
     temperatureElement.innerHTML = Math.round(celsiusTemp);
   }
   
-  
 
   // Date & Time
   let dateElement = document.querySelector("#todayDate");
