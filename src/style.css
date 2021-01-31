@@ -50,7 +50,7 @@ button {
 }
 
 .fa-rainbow{
-  color: #EC6E4C;
+  color: yellowgreen;
 }
 .weather-today {
   display: block;
@@ -104,7 +104,7 @@ h3 {
 }
 
 .week-weather .card {
-  background-color: #f1f9ff;
+  background-color: #d3edff;
   border: 2px solid #016ec6;
   border-radius: 30px;
   
@@ -121,8 +121,8 @@ h3 {
 .week-weather img{
   display: block;
   margin: 0 auto;
-  height: 60px;
-  width: 60px;
+  height: 75px;
+  width: 75px;
   
 }
 li {
@@ -141,4 +141,8 @@ li {
 }
 .degree-mode .active:hover{
  text-decoration: none;
+}
+
+.week-weather h5{
+  font-size: 20px;
 }
