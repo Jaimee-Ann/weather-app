@@ -54,7 +54,8 @@ button {
 }
 .weather-today {
   display: block;
-  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 0 auto;
 }
 h1,
 h2,
