@@ -5,6 +5,9 @@ body {
 strong {
   font-weight: bold;
 }
+p {
+  text-align: center;
+}
 .city {
   text-align: center;
   color: #016ec6;
