@@ -63,7 +63,7 @@ for (let index = 0; index < 6; index++) {
           alt=" "
           id="icon"
           />
-          <h5 class="card-text">${Math.round(forecast.main.temp_min)}° <strong>${Math.round(forecast.main.temp_min)}°</strong></h5>
+          <h5 class="card-text">${Math.round(forecast.main.temp_min)}° <strong>${Math.round(forecast.main.temp_max)}°</strong></h5>
         </div>
       </div>
     </div>
