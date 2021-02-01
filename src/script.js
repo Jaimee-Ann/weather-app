@@ -62,7 +62,7 @@ function showWeatherCondition(response) {
             alt=" "
             id="icon"
             />
-            <h5 class="card-text">${Math.round(
+            <h5 class="card-text">${Math.floor(
               forecast.main.temp_min
             )}° <strong>${Math.round(forecast.main.temp_max)}°</strong></h5>
           </div>
