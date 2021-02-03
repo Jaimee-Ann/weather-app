@@ -89,7 +89,9 @@ function showWeatherCondition(response) {
     let apiKey = "8aed1bf91e607b096a113c2dd8fde03b";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${apiKey}`;
     axios.get(apiUrl).then(showWeatherCondition);
-  }
+   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${apiKey}`;
+    axios.get(apiUrl).then(displayForecast);
+}
   
   function displayCurrentLocation(event) {
     event.preventDefault();
